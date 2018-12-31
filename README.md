@@ -2,8 +2,8 @@
 Independently completed the autumn semester homework app in "Intelligent Terminal Software Development".
 
 ## Demo
-![image](img/demo.gif)
-
+</br>
+<img width="40%" height="40%" src="img/demo.gif"/>
 ## System Description
 - This system is a native APP for naming entities and their relationship annotations, and the annotation material is limited to plain text. 
 - The user can obtain the article paragraph on the server for the labeling of the naming entity (the entity type is required to be the person name or official title), and upload the labeling result. 
