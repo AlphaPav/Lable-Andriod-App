@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/usercenter_imgs"
+        >
+        <ImageView
+            android:id="@+id/usercenter_back"
+            android:layout_width="match_parent"
+
+            android:layout_height="140dp"/>
+        <ImageView
+            android:id="@+id/usercenter_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/emoji_smile"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usercenter_infogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/usercenter_imgs"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/usercenter_line"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/usercenter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/usercenter_line"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/usercenter_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/usercenter_line"
+            android:text=" 已登陆3分钟 "/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/usercenter_btn_history_entity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="实体标注历史记录" />
+
+    <Button
+        android:id="@+id/usercenter_btn_history_relation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="关系标注历史记录" />
+    <Button
+        android:id="@+id/usercenter_btn_explain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明与字体设置" />
+
+    <Button
+        android:id="@+id/usercenter_btn_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登陆" />
+
+
+
+</LinearLayout>
+</ScrollView>

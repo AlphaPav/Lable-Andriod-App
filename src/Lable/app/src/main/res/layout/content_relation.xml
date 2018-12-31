@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/fragment_lablerelation"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <co.lujun.androidtagview.TagContainerLayout
+            android:id="@+id/relation_tagcontainerLayoutAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:container_background_color="#00000000"
+            app:container_border_radius="0dp"
+            app:container_border_width="4dp"
+            app:container_enable_drag="false"
+            app:horizontal_interval="10dp"
+            app:tag_clickable="true"
+            app:tag_theme="random"
+            app:vertical_interval="10dp" />
+
+
+        <co.lujun.androidtagview.TagContainerLayout
+            android:id="@+id/relation_tagcontainerLayoutSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            app:container_background_color="#f5f5dc"
+            app:container_enable_drag="true"
+            app:horizontal_interval="10dp"
+            app:tag_clickable="true"
+            app:tag_enable_cross="true"
+            app:tag_theme="pure_teal"
+            app:vertical_interval="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/relation_text_tag"
+                android:inputType="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/relation_btn_add_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="添加实体" />
+        </LinearLayout>
+        <Button
+            android:paddingVertical="10dp"
+            android:id="@+id/relation_btn_add_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加关系" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

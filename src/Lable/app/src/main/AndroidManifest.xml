@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alphapav.lableapplication">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Lable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="注册" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="主界面"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".History_Relation"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_relation_history" />
+        <activity
+            android:name=".History_relation_detail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_history_relation_detail" />
+        <activity
+            android:name=".History_Entity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_history__enitity" />
+        <activity
+            android:name=".History_entity_detail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_entity_relation_detail" />
+        <activity android:name=".UserExplainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="使用说明"
+            />
+
+    </application>
+
+</manifest>

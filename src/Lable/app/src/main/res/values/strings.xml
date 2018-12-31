@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lable</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_labelentity">标注实体</string>
+    <string name="title_labelrelation">标注关系</string>
+    <string name="title_usercenter">个人中心</string>
+    <string name="explain_labelentity">说明：获取文章后，长按文章内容可出现文本大爆炸效果，您可以点击其中的标签或者输入文本后添加标签，再选择类型，就完成相应实体标注。长按标签可以删除。段落标注完成请按“提交”按钮。进入下一段落请按"下一篇"按钮。</string>
+    <string name="explain_labelrelation">说明：获取文章后，您可以判断下方已有三元组是否正确。长按文章内容可出现文本大爆炸效果，您可以点击其中的标签或者输入文本后添加标签。每个关系中最多添加两个标签，然后为这两个实体选定关系，就完成相应关系标注。段落标注完成请按“提交”按钮。进入下一段落请按"下一篇"按钮。</string>
+    <string name="title_activity_relation_history">关系标注 历史记录</string>
+    <string name="title_activity_history_relation_detail">关系标注 历史详情</string>
+    <string name="title_activity_history__enitity">实体标注 历史记录</string>
+    <string name="title_activity_entity_relation_detail">实体标注 历史详情</string>
+</resources>
