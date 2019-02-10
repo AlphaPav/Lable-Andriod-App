@@ -1,5 +1,7 @@
 # Lable-Andriod-App
 Independently completed the autumn semester homework app in "Intelligent Terminal Software Development".
+
+- Video: https://youtu.be/AaEaDx_kNIMb
 ## System Description
 - This system is a native APP for naming entities and their relationship annotations, and the annotation material is limited to plain text. 
 - The user can obtain the article paragraph on the server for the labeling of the naming entity (the entity type is required to be the person name or official title), and upload the labeling result. 
@@ -9,7 +11,5 @@ Independently completed the autumn semester homework app in "Intelligent Termina
 - The Android application is based on the Android-sdk development tool, which is tested by creating an AVD (Nexus 5X API 22) in the Android Studio environment after configuring jdk.
 
 ![image](img/flowchat.png)
-
-
 ## Demo
 <img width="40%" height="40%" src="img/demo.gif"/>
